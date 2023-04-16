@@ -14,10 +14,13 @@ public class HomePage {
     //Locating the "Cherry Blossoms" link element via partiallinktext and storing it in the webelement.
     @FindBy(partialLinkText = "Cherry")
     WebElement cherry;
+
     @FindBy(tagName = "h1")
     WebElement header;
+
     @FindBys(@FindBy(tagName = "h2"))
     List<WebElement> list;
+
     private WebDriver driver;
 
     //Constructor.
