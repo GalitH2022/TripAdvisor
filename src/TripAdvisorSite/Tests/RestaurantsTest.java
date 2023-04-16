@@ -14,6 +14,7 @@ public class RestaurantsTest {
         restaurantsPage.searchViaCity("Restaurants in Aventura");
         restaurantsPage.filterResults();
         restaurantsPage.printOutResults();
+        base.seleniumClose(driver);
 
     }
 

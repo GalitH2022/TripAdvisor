@@ -52,7 +52,7 @@ public class RestaurantsPage {
 
     }
 
-    public void printOutResults() {
+    public void printOutResults() throws InterruptedException {
         System.out.printf("--------------------------------------%n");
 
         String Results = results.getText();
@@ -63,9 +63,9 @@ public class RestaurantsPage {
         for (WebElement RestList : list) {
             String ListOfRest = RestList.getText();
             System.out.println("  " + ListOfRest);
+            Thread.sleep(2000);
 
         }
-
 
     }
 
